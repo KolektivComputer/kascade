@@ -1,0 +1,39 @@
+name: Bug report
+description: Something is broken or wrong
+type: Bug
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: checkboxes
+    id: targets
+    attributes:
+      label: Targets
+      options:
+        - label: repo
+        - label: cli
+        - label: docs
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS / Node / package version
+    validations:
+      required: false
