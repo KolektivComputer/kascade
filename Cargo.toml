@@ -1,0 +1,17 @@
+[package]
+name = "kascade"
+version = "0.0.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Kolektiv polyglot monorepo runner — BSP ingest/compose/egress + adapters"
+repository = "https://github.com/KolektivComputer/kascade"
+readme = "README.md"
+
+[[bin]]
+name = "kascade"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
