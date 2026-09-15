@@ -6,5 +6,6 @@ export const docs = defineDocsChrome({
   base: '/',
   nav: [
     { label: 'Getting started', href: '/docs/' },
+    { label: 'Daemon', href: '/docs/daemon/' },
   ],
 });
