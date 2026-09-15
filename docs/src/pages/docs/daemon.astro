@@ -1,0 +1,19 @@
+---
+import DocsLayout from '@kolektiv/common-docs-chrome/astro/DocsLayout.astro';
+
+import { docs } from '../../docs-chrome';
+import '../../styles/global.css';
+---
+
+<DocsLayout config={docs} title="Daemon">
+  <h1>kascade-daemon</h1>
+  <p>
+    The CLI is thin (<code>kascade run</code> / <code>graph</code> / IDE handshake).
+    A long-lived <strong>kascade-daemon</strong> holds BSP client sessions, the composed
+    graph, and file watches so every command doesn’t re-ingest Mill/Gradle/Bazel.
+    IntelliJ BSP egress attaches to the daemon instead of spawning a new server per import.
+  </p>
+  <p>
+    Default on for interactive/IDE. Use <code>kascade --no-daemon</code> for CI.
+  </p>
+</DocsLayout>
